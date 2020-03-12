@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(ros_package_a)
+project(ros_package_b)
 
 find_package(catkin REQUIRED COMPONENTS
   rospy
@@ -12,7 +12,7 @@ catkin_python_setup()
 # Generate messages in the 'msg' folder
 add_message_files(
   FILES
-    MessageA.msg
+    MessageB.msg
 )
 
 ## Generate added messages and services with any dependencies listed here
