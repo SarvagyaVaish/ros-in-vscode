@@ -8,7 +8,7 @@ from ros_package_a.utils import util_1
 
 def callback(data):
     rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
-    
+
 
 if __name__ == '__main__':
 

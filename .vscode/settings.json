@@ -1,2 +1,5 @@
 {
+    "python.autoComplete.extraPaths": [
+        "/home/turtlebot/catkin_ws/src/ros_package_a/src",
+    ]
 }
