@@ -3,7 +3,8 @@
 import rospy
 from std_msgs.msg import String
 
-from ros_package_a.utils import util_1
+from ros_package_a.some_ros_util import util_1
+from package_foo.foo import foo_calls_bar
 
 
 def callback(data):
@@ -12,10 +13,11 @@ def callback(data):
 
 if __name__ == '__main__':
 
-    # test calling the imported util
+    # test calling methods from the package
     util_1()
+    foo_calls_bar()
 
-    # normal rs stuff
+    # normal ros stuff
     rospy.init_node('listener', anonymous=True)
     rospy.Subscriber("chatter", String, callback)
     rospy.spin()
